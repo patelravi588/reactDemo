@@ -14,7 +14,13 @@ import { NavLink, Link } from "react-router-dom";
                         <NavLink className="nav-link" exact to="/aboutus">About Us</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" exact to="contactus">Contact Us</NavLink>
+                        <NavLink className="nav-link" exact to="/contactus">Contact Us</NavLink>
+                    </li>
+                    <li className ="nav-item">
+                        <NavLink className = "nav-link" exact to="/withdraw">Withdraw</NavLink>
+                    </li>
+                    <li className ="nav-item">
+                        <NavLink className = "nav-link" exact to="/deposit">Deposit</NavLink>
                     </li>
                     </ul>
                 </div>

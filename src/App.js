@@ -9,9 +9,12 @@ import NotFound from './components/pages/NotFouns';
 import AddUser from './components/pages/users/AddUser';
 import EditUser from './components/pages/users/EditUser';
 import ViewUser from './components/pages/users/ViewUser';
+import Deposit from './components/pages/Deposit';
+import Withdraw from './components/pages/Withdraw';
 
 function App() {
   return (
+    
     <Router>
       <div className="App">
         <NavbarMenu />
@@ -22,6 +25,8 @@ function App() {
           <Route exact path = "/users/add" component ={AddUser}></Route>
           <Route exact path = "/users/edit/:id" component ={EditUser}></Route>
           <Route exact path = "/users/view/:id" component = {ViewUser}></Route>
+          <Route exact path = "/deposit" component = {Deposit}></Route>
+          <Route exact path = "/withdraw" component = {Withdraw}></Route>
           <Route component = {NotFound}></Route>
         </Switch>
       </div>
